@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <script>
+        // Apply theme immediately to prevent transition flash
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Tawhid Alam Tapadar</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="Get in touch with Tawhid Alam Tapadar. Review job opportunities, remote/onsite availability, and send direct recruiter messages.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="global-header">
+        <nav class="nav-container">
+            <a href="./index.html" class="logo" id="navLogo">
+                TAWHID ALAM <span>TAPADAR</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./about.html" class="nav-link">About</a>
+                <a href="./experience.html" class="nav-link">Experience</a>
+                <a href="./simulator.html" class="nav-link">Simulator</a>
+                <a href="./contact.html" class="nav-link active">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="status-badge" id="outreachBadge">
+                    <span class="status-dot"></span>
+                    Remote / Onsite (Relocation)
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <!-- Icon loaded via Javascript -->
+                </button>
+                <a href="./contact.html" class="btn btn-primary" style="font-size: 0.75rem; padding: 0.45rem 1rem;">Hire Me</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <div class="mobile-nav-links">
+            <a href="./index.html" class="mobile-nav-link">Home</a>
+            <a href="./about.html" class="mobile-nav-link">About</a>
+            <a href="./experience.html" class="mobile-nav-link">Experience</a>
+            <a href="./simulator.html" class="mobile-nav-link">Simulator</a>
+            <a href="./contact.html" class="mobile-nav-link active">Contact</a>
+            <a href="./contact.html" class="mobile-nav-link" style="color: var(--accent-blue);">Hire Me</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="section-title-wrapper fade-up-trigger">
+            <div class="section-subtitle">Get In Touch</div>
+            <h1 class="section-title">Contact & <span class="highlight-text">Availability</span></h1>
+        </div>
+
+        <div class="contact-grid fade-up-trigger">
+            <!-- Left Contact Channels -->
+            <div class="contact-left">
+                <div class="glass-card contact-channels">
+                    <h3>Direct Channels</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.8rem; margin-bottom: 1.25rem;">
+                        Reach out directly regarding active recruiter cycles or job openings:
+                    </p>
+                    
+                    <div class="channel-card">
+                        <div class="channel-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="channel-info">
+                            <h4>Phone Number</h4>
+                            <p><a href="tel:+918011998248">+91 80119 98248</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="channel-card">
+                        <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="channel-info">
+                            <h4>Email Address</h4>
+                            <p><a href="mailto:tapadarakram@gmail.com">tapadarakram@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="channel-card">
+                        <div class="channel-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="channel-info">
+                            <h4>LinkedIn Profile</h4>
+                            <p><a href="https://linkedin.com/in/md-tawhid-alam-ab8824304" target="_blank" rel="noopener noreferrer">linkedin.com/in/md-tawhid-alam-ab8824304</a></p>
+                        </div>
+                    </div>
+
+                    <div class="channel-card">
+                        <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="channel-info">
+                            <h4>Job Placement Status</h4>
+                            <p style="color: var(--text-primary); font-weight: 600;">Available for Remote & Onsite (Relocation)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Simple Contact Form -->
+            <div class="glass-card bant-form-card">
+                <div class="bant-intro">
+                    <h3>Inquiry Form</h3>
+                    <p>
+                        Send a message directly regarding candidate placement or interview bookings.
+                    </p>
+                </div>
+                
+                <form id="bantForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Your Name</label>
+                            <input class="form-input" type="text" id="name" required placeholder="e.g. John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Business Email</label>
+                            <input class="form-input" type="email" id="email" required placeholder="e.g. john@company.com">
+                        </div>
+                        
+                        <div class="form-group form-full">
+                            <label class="form-label" for="company">Company / Organization</label>
+                            <input class="form-input" type="text" id="company" required placeholder="e.g. Acme Sales Corp">
+                        </div>
+                        
+                        <div class="form-group form-full">
+                            <label class="form-label" for="need">Message / Opportunity Details</label>
+                            <textarea class="form-textarea" id="need" required placeholder="Describe the active opportunity, target region, and SDR/Inside Sales role expectations..."></textarea>
+                        </div>
+                        
+                        <div class="form-full" style="margin-top: 1rem;">
+                            <button class="btn btn-primary" type="submit" style="width: 100%;">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Simulated CRM Lead Alert Pop-up Notification (Clean Commercial UI) -->
+    <div class="crm-console-alert" id="crmConsoleAlert">
+        <div class="crm-alert-header">
+            <span>Inquiry Received</span>
+            <span style="color: var(--accent-blue); font-weight: 700;">● Assigned</span>
+        </div>
+        <div class="crm-alert-body">
+            <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem;">New message routed to Tawhid's inbox:</p>
+            <table>
+                <tr>
+                    <td>Contact:</td>
+                    <td><span id="crmLeadName" style="color: var(--text-primary); font-weight: 600;">--</span></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><span id="crmLeadEmail" style="color: var(--text-primary);">--</span></td>
+                </tr>
+                <tr>
+                    <td>Company:</td>
+                    <td><span id="crmBantB" style="color: var(--text-primary); font-weight: 600;">--</span></td>
+                </tr>
+                <tr>
+                    <td>Message:</td>
+                    <td><span id="crmBantN" style="color: var(--text-secondary);">--</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Global Footer -->
+    <footer class="global-footer">
+        <div class="footer-container">
+            <div class="footer-copyright">
+                &copy; 2026 Tawhid Alam Tapadar. All rights reserved.
+            </div>
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./experience.html">Experience</a>
+                <a href="./simulator.html">Simulator</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+</body>
+</html>

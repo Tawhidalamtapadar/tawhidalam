@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <script>
+        // Apply theme immediately to prevent transition flash
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Tawhid Alam Tapadar</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="Detailed profile of Tawhid Alam Tapadar, outlining qualifications, core capabilities across the full sales cycle, and language skills.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="global-header">
+        <nav class="nav-container">
+            <a href="./index.html" class="logo" id="navLogo">
+                TAWHID ALAM <span>TAPADAR</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./about.html" class="nav-link active">About</a>
+                <a href="./experience.html" class="nav-link">Experience</a>
+                <a href="./simulator.html" class="nav-link">Simulator</a>
+                <a href="./contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="status-badge" id="outreachBadge">
+                    <span class="status-dot"></span>
+                    Remote / Onsite (Relocation)
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <!-- Icon loaded via Javascript -->
+                </button>
+                <a href="./contact.html" class="btn btn-primary" style="font-size: 0.75rem; padding: 0.45rem 1rem;">Hire Me</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <div class="mobile-nav-links">
+            <a href="./index.html" class="mobile-nav-link">Home</a>
+            <a href="./about.html" class="mobile-nav-link active">About</a>
+            <a href="./experience.html" class="mobile-nav-link">Experience</a>
+            <a href="./simulator.html" class="mobile-nav-link">Simulator</a>
+            <a href="./contact.html" class="mobile-nav-link">Contact</a>
+            <a href="./contact.html" class="mobile-nav-link" style="color: var(--accent-blue);">Hire Me</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="section-title-wrapper fade-up-trigger">
+            <div class="section-subtitle">My Profile</div>
+            <h1 class="section-title">Sales & Business <span class="highlight-text">Capabilities</span></h1>
+        </div>
+
+        <!-- Section 1: Profile & Professional Summary (Balanced Row Grid) -->
+        <div class="about-profile-grid fade-up-trigger">
+            <!-- Left Column: Profile Card -->
+            <div class="glass-card profile-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <div class="profile-image-container">
+                        <img src="https://placehold.co/400x400/1e293b/3b82f6?text=TAWHID" alt="Tawhid Alam Tapadar Profile" class="profile-img">
+                    </div>
+                    <h2 class="profile-title">Tawhid Alam Tapadar</h2>
+                    <p class="profile-subtitle">Inside Sales Executive</p>
+                    
+                    <a href="./Tawhid_Alam_Tapadar_CV.pdf" download="Tawhid_Alam_Tapadar_CV.pdf" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem; margin-bottom: 1rem;">
+                        Download Resume PDF
+                    </a>
+                </div>
+                
+                <div class="about-contact-info">
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-location-dot"></i> Karimganj, Assam, India
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-phone"></i> +91 80119 98248
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-envelope"></i> tapadarakram@gmail.com
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-briefcase"></i> Remote / Onsite Relocation
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Professional Summary Card (Taller and Centered Content) -->
+            <div class="glass-card" style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                <h3>Professional Summary</h3>
+                <p style="color: var(--text-secondary); margin-top: 1rem; line-height: 1.75; font-size: 0.95rem;">
+                    Results-driven Sales professional with a track record of exceeding targets in high-volume environments. Executed 120+ outbound calls daily in early career, achieving INR 1,00,000+ in daily sales revenue on every active calling day. BSc in Information Technology combined with frontline sales experience makes me uniquely positioned for tech-focused SDR and business development roles. Ranked #1 for 3 consecutive weeks in a nationally competitive 12-week Sales Orientation Program, selected among the top 30 from thousands of applicants. Promoted to an international airport branch for exceptional performance. Fluent in 6 languages. Ready to bring the same outbound intensity, consultative selling ability, and closing drive to a remote or onsite sales role.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section 2: Core Skills Portfolio (Full Width Grid) -->
+        <div class="skills-block fade-up-trigger" style="margin-top: 2.5rem;">
+            <h3 class="skills-category-title">Core Skills Portfolio</h3>
+            <div class="skills-grid">
+                <div class="skill-tag-card">
+                    <div class="skill-tag-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                    <h4 class="skill-tag-name">Outbound Calling</h4>
+                    <span class="skill-tag-level">High-Volume Outreach</span>
+                </div>
+                <div class="skill-tag-card">
+                    <div class="skill-tag-icon"><i class="fa-solid fa-clipboard-question"></i></div>
+                    <h4 class="skill-tag-name">Lead Qualification</h4>
+                    <span class="skill-tag-level">BANT / SPIN Frameworks</span>
+                </div>
+                <div class="skill-tag-card">
+                    <div class="skill-tag-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4 class="skill-tag-name">Objection Handling</h4>
+                    <span class="skill-tag-level">Consultative Closing</span>
+                </div>
+                <div class="skill-tag-card">
+                    <div class="skill-tag-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h4 class="skill-tag-name">Consultative Selling</h4>
+                    <span class="skill-tag-level">Needs-based Mapping</span>
+                </div>
+                <div class="skill-tag-card">
+                    <div class="skill-tag-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                    <h4 class="skill-tag-name">Cold Outreach</h4>
+                    <span class="skill-tag-level">Methodical Follow-up</span>
+                </div>
+                <div class="skill-tag-card">
+                    <div class="skill-tag-icon"><i class="fa-solid fa-database"></i></div>
+                    <h4 class="skill-tag-name">CRM Systems</h4>
+                    <span class="skill-tag-level">Zoho CRM Proficiency</span>
+                </div>
+                <div class="skill-tag-card">
+                    <div class="skill-tag-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h4 class="skill-tag-name">Needs Assessment</h4>
+                    <span class="skill-tag-level">Pain Point Diagnosis</span>
+                </div>
+                <div class="skill-tag-card">
+                    <div class="skill-tag-icon"><i class="fa-solid fa-filter"></i></div>
+                    <h4 class="skill-tag-name">Pipeline Management</h4>
+                    <span class="skill-tag-level">Status & Stage Hygiene</span>
+                </div>
+                <div class="skill-tag-card">
+                    <div class="skill-tag-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <h4 class="skill-tag-name">Quota Achievement</h4>
+                    <span class="skill-tag-level">Target Driven</span>
+                </div>
+                <div class="skill-tag-card">
+                    <div class="skill-tag-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h4 class="skill-tag-name">Customer Engagement</h4>
+                    <span class="skill-tag-level">High-Net-Worth Rapport</span>
+                </div>
+                <div class="skill-tag-card">
+                    <div class="skill-tag-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                    <h4 class="skill-tag-name">Cross-Cultural Sales</h4>
+                    <span class="skill-tag-level">Multilingual Relations</span>
+                </div>
+                <div class="skill-tag-card">
+                    <div class="skill-tag-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h4 class="skill-tag-name">Tech-Savvy SDR</h4>
+                    <span class="skill-tag-level">BSc IT Analytical Skills</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Recruiter Challenge Auditor Widget (Full Width Card) -->
+        <div class="auditor-widget-card fade-up-trigger">
+            <h3 class="skills-category-title">
+                Auditor: Map Skills to Your Pipeline Bottlenecks
+            </h3>
+            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.5rem;">
+                Select your team's current sales pipeline bottleneck to check how Tawhid's skills address it:
+            </p>
+            
+            <div class="auditor-tabs">
+                <button class="auditor-tab-btn active" data-target="challengeOutbound">Low Lead Volume</button>
+                <button class="auditor-tab-btn" data-target="challengeCrm">Disorganized CRM data</button>
+                <button class="auditor-tab-btn" data-target="challengeHnw">HNW Account Retention</button>
+            </div>
+            
+            <div class="auditor-results">
+                <!-- Result 1 -->
+                <div class="auditor-result active" id="challengeOutbound">
+                    <h4 class="auditor-result-title">Bottleneck: Low Outbound Activity & Poor Qualify Rates</h4>
+                    <p class="auditor-result-desc">
+                        Tawhid addresses this through disciplined outbound outreach volume (120+ calls daily) combined with systematic SPIN and BANT qualification frameworks, filtering out cold opportunities early.
+                    </p>
+                    <div class="auditor-skills-linked">
+                        <span class="badge badge-indigo">Outbound Calling</span>
+                        <span class="badge badge-indigo">Lead Qualification (BANT/SPIN)</span>
+                        <span class="badge badge-indigo">Needs Assessment</span>
+                        <span class="badge badge-indigo">Cold Outreach</span>
+                    </div>
+                </div>
+                <!-- Result 2 -->
+                <div class="auditor-result" id="challengeCrm">
+                    <h4 class="auditor-result-title">Bottleneck: Messy CRM Pipeline Logs & Poor Follow-ups</h4>
+                    <p class="auditor-result-desc">
+                        With a BSc in Information Technology, Tawhid understands database structures. He manages prospect lifecycles systematically within Zoho CRM, ensuring precise status logs and automated follow-ups.
+                    </p>
+                    <div class="auditor-skills-linked">
+                        <span class="badge badge-indigo">CRM Tools (Zoho CRM)</span>
+                        <span class="badge badge-indigo">Pipeline Management</span>
+                        <span class="badge badge-indigo">BSc IT Analytical Skills</span>
+                    </div>
+                </div>
+                <!-- Result 3 -->
+                <div class="auditor-result" id="challengeHnw">
+                    <h4 class="auditor-result-title">Bottleneck: Poor Retention of High-Net-Worth Accounts</h4>
+                    <p class="auditor-result-desc">
+                        Promoted to an international airport branch, Tawhid has extensive experience managing high-net-worth travellers, delivering premium consultative needs mapping and negotiating fluently in 6 languages.
+                    </p>
+                    <div class="auditor-skills-linked">
+                        <span class="badge badge-indigo">Customer Engagement</span>
+                        <span class="badge badge-indigo">Cross-Cultural Communication</span>
+                        <span class="badge badge-indigo">Consultative Selling</span>
+                        <span class="badge badge-indigo">Objection Handling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Split Grid for Education/Certs vs Languages/IT Foundation -->
+        <div class="about-split-grid fade-up-trigger">
+            <!-- Left Column: Academic & Certifications -->
+            <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+                <!-- Academic Background -->
+                <div class="skills-block" style="margin-bottom: 0;">
+                    <h3 class="skills-category-title">Education & Academic Background</h3>
+                    <div class="edu-grid">
+                        <div class="glass-card edu-card">
+                            <div class="edu-icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="edu-details">
+                                <h4>Bachelor of Science in Information Technology (BSc IT)</h4>
+                                <div class="edu-institution">B. Barooah College, Gauhati University</div>
+                                <div class="edu-meta">
+                                    <span>2021 — 2024</span>
+                                    <span>•</span>
+                                    <span>CGPA: 6.82</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glass-card edu-card">
+                            <div class="edu-icon-box"><i class="fa-solid fa-school"></i></div>
+                            <div class="edu-details">
+                                <h4>Higher Secondary (10+2) in Science</h4>
+                                <div class="edu-institution">N.E.J.C.</div>
+                                <div class="edu-meta">
+                                    <span>82.24% Score</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="skills-block" style="margin-bottom: 0;">
+                    <h3 class="skills-category-title">Certifications</h3>
+                    <div class="edu-grid">
+                        <div class="glass-card edu-card">
+                            <div class="edu-icon-box"><i class="fa-solid fa-certificate"></i></div>
+                            <div class="edu-details">
+                                <h4>Residential Sales Orientation Program</h4>
+                                <div class="edu-institution">Ajmal Foundation</div>
+                                <div class="edu-meta">
+                                    <span>Grade A • Awarded Sep 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Languages & Tech Bridge -->
+            <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+                <!-- Languages Fluency -->
+                <div class="skills-block" style="margin-bottom: 0;">
+                    <h3 class="skills-category-title">Languages Fluency</h3>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1.25rem;">
+                        Fluent communication across 6 regional and international languages, expanding pipeline scope and account relationships:
+                    </p>
+                    <div class="languages-grid">
+                        <div class="glass-card lang-card">
+                            <div class="lang-circle">
+                                <svg>
+                                    <circle class="circle-bg" cx="24" cy="24" r="20"></circle>
+                                    <circle class="circle-progress" cx="24" cy="24" r="20" data-percent="95"></circle>
+                                </svg>
+                                <span class="lang-percent">95%</span>
+                            </div>
+                            <div class="lang-name">English</div>
+                            <div class="lang-level">Fluent</div>
+                        </div>
+                        <div class="glass-card lang-card">
+                            <div class="lang-circle">
+                                <svg>
+                                    <circle class="circle-bg" cx="24" cy="24" r="20"></circle>
+                                    <circle class="circle-progress" cx="24" cy="24" r="20" data-percent="95"></circle>
+                                </svg>
+                                <span class="lang-percent">95%</span>
+                            </div>
+                            <div class="lang-name">Hindi</div>
+                            <div class="lang-level">Fluent</div>
+                        </div>
+                        <div class="glass-card lang-card">
+                            <div class="lang-circle">
+                                <svg>
+                                    <circle class="circle-bg" cx="24" cy="24" r="20"></circle>
+                                    <circle class="circle-progress" cx="24" cy="24" r="20" data-percent="95"></circle>
+                                </svg>
+                                <span class="lang-percent">95%</span>
+                            </div>
+                            <div class="lang-name">Bengali</div>
+                            <div class="lang-level">Fluent</div>
+                        </div>
+                        <div class="glass-card lang-card">
+                            <div class="lang-circle">
+                                <svg>
+                                    <circle class="circle-bg" cx="24" cy="24" r="20"></circle>
+                                    <circle class="circle-progress" cx="24" cy="24" r="20" data-percent="95"></circle>
+                                </svg>
+                                <span class="lang-percent">95%</span>
+                            </div>
+                            <div class="lang-name">Assamese</div>
+                            <div class="lang-level">Fluent</div>
+                        </div>
+                        <div class="glass-card lang-card">
+                            <div class="lang-circle">
+                                <svg>
+                                    <circle class="circle-bg" cx="24" cy="24" r="20"></circle>
+                                    <circle class="circle-progress" cx="24" cy="24" r="20" data-percent="90"></circle>
+                                </svg>
+                                <span class="lang-percent">90%</span>
+                            </div>
+                            <div class="lang-name">Urdu</div>
+                            <div class="lang-level">Fluent</div>
+                        </div>
+                        <div class="glass-card lang-card">
+                            <div class="lang-circle">
+                                <svg>
+                                    <circle class="circle-bg" cx="24" cy="24" r="20"></circle>
+                                    <circle class="circle-progress" cx="24" cy="24" r="20" data-percent="55"></circle>
+                                </svg>
+                                <span class="lang-percent">B1</span>
+                            </div>
+                            <div class="lang-name">Arabic</div>
+                            <div class="lang-level">Conversational</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analytical IT Foundation -->
+                <div class="glass-card tech-bridge-card">
+                    <h3>Analytical IT Foundation</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.5rem;">
+                        Leveraging a Bachelor of Science in IT to optimize modern sales operations:
+                    </p>
+                    <div class="tech-bridge-list" style="margin-top: 1.25rem; display: grid; gap: 1.25rem;">
+                        <div class="tech-bridge-item" style="display: flex; gap: 1rem; align-items: start;">
+                            <div class="tech-bridge-num" style="font-size: 1.25rem; font-weight: 800; color: var(--accent-blue);">01</div>
+                            <div class="tech-bridge-content">
+                                <h4 style="font-size: 0.95rem; font-weight: 700;">Data Hygiene & Reporting</h4>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">Familiarity with query systems and database logic ensures precise CRM tracking and clean sales records.</p>
+                            </div>
+                        </div>
+                        <div class="tech-bridge-item" style="display: flex; gap: 1rem; align-items: start;">
+                            <div class="tech-bridge-num" style="font-size: 1.25rem; font-weight: 800; color: var(--accent-blue);">02</div>
+                            <div class="tech-bridge-content">
+                                <h4 style="font-size: 0.95rem; font-weight: 700;">Tech-Sector Competence</h4>
+                                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">Equipped to discuss features, system integrations, and infrastructure with technical buyers and stakeholders.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="global-footer">
+        <div class="footer-container">
+            <div class="footer-copyright">
+                &copy; 2026 Tawhid Alam Tapadar. All rights reserved.
+            </div>
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./experience.html">Experience</a>
+                <a href="./simulator.html">Simulator</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+</body>
+</html>

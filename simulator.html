@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <script>
+        // Apply theme immediately to prevent transition flash
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator | Tawhid Alam Tapadar</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="Test the outbound objection handling abilities of Tawhid Alam Tapadar using this interactive call simulator. Choose common business objections and review consultative sales responses.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Ambient Blur Graphics -->
+    <div class="bg-ambient-glow"></div>
+    <div class="bg-ambient-glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="global-header">
+        <nav class="nav-container">
+            <a href="./index.html" class="logo" id="navLogo">
+                TAWHID ALAM <span>TAPADAR</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./about.html" class="nav-link">About</a>
+                <a href="./experience.html" class="nav-link">Experience</a>
+                <a href="./simulator.html" class="nav-link active">Simulator</a>
+                <a href="./contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="status-badge" id="outreachBadge">
+                    <span class="status-dot"></span>
+                    Remote / Onsite (Relocation)
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <!-- Icon loaded via Javascript -->
+                </button>
+                <a href="./contact.html" class="btn btn-primary" style="font-size: 0.75rem; padding: 0.45rem 1rem;">Hire Me</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <div class="mobile-nav-links">
+            <a href="./index.html" class="mobile-nav-link">Home</a>
+            <a href="./about.html" class="mobile-nav-link">About</a>
+            <a href="./experience.html" class="mobile-nav-link">Experience</a>
+            <a href="./simulator.html" class="mobile-nav-link active">Simulator</a>
+            <a href="./contact.html" class="mobile-nav-link">Contact</a>
+            <a href="./contact.html" class="mobile-nav-link" style="color: var(--accent-blue);">Hire Me</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="section-title-wrapper fade-up-trigger">
+            <div class="section-subtitle">
+                <i class="fa-solid fa-phone-volume"></i> Active Sales Auditing
+            </div>
+            <h1 class="section-title">The Objection <span class="text-gradient">Dialogue Simulator</span></h1>
+        </div>
+
+        <div class="simulator-layout fade-up-trigger">
+            <!-- Left: Strategy explanation -->
+            <div class="simulator-info">
+                <h3>Audit My Phone Skills in Real Time</h3>
+                <p>
+                    Recruiters and hiring managers often ask: <em>"How does he handle cold objections?"</em> Instead of explaining my sales training, I built this simulator so you can test it directly.
+                </p>
+                <p style="color: var(--text-secondary);">
+                    My methodology relies heavily on BANT (Budget, Authority, Need, Timeline) qualification and consultative discovery. Choose any typical prospect objection to see my response.
+                </p>
+                <div class="bullet-list" style="margin-top: 1.5rem;">
+                    <div class="bullet-item">
+                        <div class="bullet-icon"><i class="fa-solid fa-star"></i></div>
+                        <div class="bullet-content">
+                            <h4>Dynamic Objections Routing</h4>
+                            <p>Choose any typical prospect pushback on the phone device mock to trigger a simulated cold-call response.</p>
+                        </div>
+                    </div>
+                    <div class="bullet-item">
+                        <div class="bullet-icon"><i class="fa-solid fa-star"></i></div>
+                        <div class="bullet-content">
+                            <h4>Audio Tone Synthesis</h4>
+                            <p>The console synthesizes realistic dial tones and call signaling beeps dynamically in the browser.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Interactive Device -->
+            <div class="simulator-device">
+                <div class="device-container">
+                    <!-- Standby Dialer Screen -->
+                    <div class="device-screen screen-standby">
+                        <div class="device-header">
+                            <span>Mobile Line</span>
+                            <span>100% [⚡]</span>
+                        </div>
+                        
+                        <div class="caller-id-box">
+                            <div class="caller-avatar">
+                                <i class="fa-solid fa-user" style="font-size: 1.5rem; color: var(--accent-blue);"></i>
+                            </div>
+                            <h4 class="caller-name">Tawhid Alam Tapadar</h4>
+                            <span class="caller-status">Inside Sales Executive</span>
+                        </div>
+                        
+                        <div style="margin: 1rem 0 0.5rem; text-align: center;">
+                            <p style="font-size: 0.75rem; color: #64748b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Select an objection to dial:</p>
+                        </div>
+                        
+                        <div class="objections-grid">
+                            <button class="objection-btn" data-objection="budget">
+                                <span class="objection-btn-num">1</span>
+                                <span>We don't have budget.</span>
+                            </button>
+                            <button class="objection-btn" data-objection="email">
+                                <span class="objection-btn-num">2</span>
+                                <span>Just send me an email.</span>
+                            </button>
+                            <button class="objection-btn" data-objection="competitor">
+                                <span class="objection-btn-num">3</span>
+                                <span>We use a competitor.</span>
+                            </button>
+                            <button class="objection-btn" data-objection="busy">
+                                <span class="objection-btn-num">4</span>
+                                <span>Too busy, call next quarter.</span>
+                            </button>
+                        </div>
+                        
+                        <div style="padding-bottom: 0.75rem;">
+                            <div class="device-dial-cta">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Active Call Screen -->
+                    <div class="device-screen screen-active-call">
+                        <div class="device-header">
+                            <span>Mobile Line</span>
+                            <span class="call-timer" id="callTimer" style="margin: 0;">00:00</span>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 0.75rem; margin-bottom: 1.25rem;">
+                            <h4 class="caller-name" style="font-size: 1.05rem;">Active Call: Tawhid</h4>
+                            <span style="font-size: 0.7rem; color: #10b981; font-weight: 600; display: inline-flex; align-items: center; gap: 0.25rem;">
+                                <span style="width: 5px; height: 5px; border-radius: 50%; background-color: #10b981;"></span>
+                                Consultative Pitch Mode
+                            </span>
+                        </div>
+                        
+                        <!-- Chat/Call History -->
+                        <div class="chat-history">
+                            <!-- Populated dynamically -->
+                        </div>
+                        
+                        <!-- Typing Indicator -->
+                        <div class="typing-indicator" id="typingIndicator">
+                            <span class="typing-dot"></span>
+                            <span class="typing-dot"></span>
+                            <span class="typing-dot"></span>
+                        </div>
+                        
+                        <!-- Call Controls -->
+                        <div class="call-footer-actions">
+                            <button class="call-action-btn" title="Mute">
+                                <i class="fa-solid fa-microphone-slash"></i>
+                            </button>
+                            <button class="call-action-btn hangup" id="hangupBtn" title="Hang Up">
+                                <i class="fa-solid fa-phone-slash"></i>
+                            </button>
+                            <button class="call-action-btn" title="Speaker">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="global-footer">
+        <div class="footer-container">
+            <div class="footer-copyright">
+                &copy; 2026 Tawhid Alam Tapadar. All rights reserved.
+            </div>
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./experience.html">Experience</a>
+                <a href="./simulator.html">Simulator</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+</body>
+</html>
